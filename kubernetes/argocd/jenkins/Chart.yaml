@@ -1,0 +1,13 @@
+apiVersion: v2
+name: argo-jenkins
+version: 0.0.1
+appVersion: 0.0.1
+description: Jenkins - Build great things at any scale! The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
+dependencies: 
+  - name: jenkins
+    version: 3.3.18
+    repository: "https://charts.jenkins.io"
+maintainers:
+  - name: tomaster
+    email: tfruizk8s@gmail.com
+icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
