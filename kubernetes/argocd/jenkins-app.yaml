@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jenkins
+  namespace: argocd
+spec:
+  source:
+    path: kubernetes/argocd/jenkins
+    repoURL: https://github.com/tomich87/tomaster.git
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: jenkins
+  project: default
